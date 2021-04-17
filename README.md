@@ -16,10 +16,16 @@ If you want to separate the roles of the server and the client, you can use it l
 
 I used MySQL using Docker. it doesn't matter if you use a local database, but if you want to use Docker, do the following:
 1. Install Docker.
+
+</br>
+
 2. Running MySQL container, like this:
 ```docker
 docker run -dit --name mysql -e MYSQL_ROOT_PASSWORD=qwer1234 -p 3306:3306 mysql
 ```
+
+</br>
+
 3. Connect to the mysql server. If you don't have a program that can access mysql, you can work directly inside the docker container. enter the command below to connect to the container.
 
 ```docker
@@ -29,6 +35,8 @@ docker exec -it mysql /bin/bash
 
 mysql -u root -p
 ```
+
+</br>
 
 4. Create a simple table and add elements.
 ```sql
@@ -42,6 +50,8 @@ create table user(
 ```sql
 INSERT INTO user VALUES ('test','1234','test@test.com');
 ```
+
+</br>
 
 5. When connecting from node.js, add the following command to remove the authentication error.
 
