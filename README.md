@@ -64,6 +64,22 @@ ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '';
 
 </br>
 
+6. Clone this repository
+```bash
+git clone https://github.com/hotchya/REST-API-node.js.git
+```
+
+</br>
+
+7. Install npm packages
+```bash
+cd REST-API-node.js
+
+npm install
+```
+
+</br>
+
 ## Usage
 Run the server,
 ```bash
