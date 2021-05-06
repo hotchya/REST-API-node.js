@@ -41,8 +41,12 @@ mysql -u root -p
 
 </br>
 
-4. Create a simple table and add elements.
+4. Create database and simple table and add elements.
 ```sql
+create database main;
+
+use main;
+
 create table user(
     id varchar(15) primary key,
     password varchar(15) not null,
